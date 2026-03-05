@@ -76,8 +76,8 @@ if __name__ == '__main__':
             for resultado in pool.imap_unordered(testar_prefixo, tarefas):
                 if resultado:
                     print("\n" + "="*50)
-                    print(f" SUCESSO ABSOLUTO! O HASH FOI QUEBRADO.")
-                    print(f" A SENHA ORIGINAL É: {resultado}")
+                    print(f" O HASH FOI QUEBRADO.")
+                    print(f" A SENHA É: {resultado}")
                     print("="*50 + "\n")
                     encontrada = True
                     pool.terminate() 
